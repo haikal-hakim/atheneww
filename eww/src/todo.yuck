@@ -17,7 +17,7 @@
                    :text "󰏫")
 
             (label :class "todo-title"
-                   :text "Catatan Hari Ini")
+                   :text "Today's Notes")
             )
 
        (box :class "todo-content"
