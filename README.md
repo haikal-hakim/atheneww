@@ -1,8 +1,8 @@
 <h1 align="center">Athena Elkowars Wacky Widgets</h1>
 
 <p align="center">
-  <a href="https://github.com/haikal-hakim/atheneww/blob/main/LICENSE">
-   <img src="https://img.shields.io/github/license/haikal-hakim/atheneww?style=flat&color=orange&cacheSeconds=0" />
+  <a href="https://github.com/haikal-hakim/athena-eww/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-orange.svg" />
   </a>
   <img src="https://img.shields.io/badge/Status-WIP-red?style=flat" />
 </p>
