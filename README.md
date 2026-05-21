@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/haikal-hakim/atheneww/blob/main/LICENSE">
-   <img src="https://img.shields.io/github/license/haikal-hakim/atheneww?style=flat&color=orange" />
+   <img src="https://img.shields.io/github/license/haikal-hakim/atheneww?style=flat&color=orange&cacheSeconds=0" />
   </a>
   <img src="https://img.shields.io/badge/Status-WIP-red?style=flat" />
 </p>
