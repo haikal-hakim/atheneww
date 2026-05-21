@@ -1,0 +1,42 @@
+(defwidget launcher-btn [icon cmd]
+  (eventbox :cursor "pointer"
+            (button :class "launcher-btn"
+                    :style "background-image: url('${icon}');"
+                    :onclick cmd))
+  )
+
+(defwidget widget_launcher []
+  (box :class "launcher"
+       :orientation "vertical"
+       (box :orientation "horizontal"
+            :spacing 10
+            :space-evenly true
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/code.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && code &")
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/onlyoffice.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && onlyoffice-desktopeditors &")
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/obsidian.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && obsidian &")
+            )
+       (box :orientation "horizontal"
+            :spacing 10
+            :space-evenly true
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/mousepad.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && mousepad &")
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/thunar.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && thunar &")
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/kitty.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && kitty &")
+            )
+       (box :orientation "horizontal"
+            :spacing 10
+            :space-evenly true
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/discord.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && discord &")
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/spotify.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && spotify-launcher &")
+            (launcher-btn :icon "${EWW_CONFIG_DIR}/assets/apps/firefox.png"
+                          :cmd "bash ~/.config/eww/scripts/toggle_dashboard.sh close && firefox &")
+            )
+       )
+  )

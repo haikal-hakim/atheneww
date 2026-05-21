@@ -1,0 +1,52 @@
+(deflisten music_data
+  "playerctl --player=spotify --follow metadata --format '{\"status\":\"{{status}}\",\"title\":\"{{title}}\",\"artist\":\"{{artist}}\"}'")
+
+(defwidget widget_music []
+  (box :class "music-card"
+       :orientation "horizontal"
+       :space-evenly false
+       :spacing 10
+
+       (box :class "music-cover"
+            :style "background-image: url('${EWW_CONFIG_DIR}/assets/music.png');"
+            :width 120
+            :height 100)
+
+       (box :class "music-info"
+            :orientation "vertical"
+            :space-evenly false
+            :spacing 8
+            :valign "center"
+
+            (label :class "music-title"
+                   :text {music_data.title}
+                   :limit-width 20
+                   :halign "center")
+
+            (label :class "music-artist"
+                   :text {music_data.artist}
+                   :limit-width 20
+                   :halign "center")
+
+            (box :class "music-controls"
+                 :orientation "horizontal"
+                 :space-evenly true
+
+                 (eventbox :cursor "pointer"
+                           (button :onclick "playerctl --player=spotify previous"
+                                   :style "background: none; box-shadow: none;"
+                                   (label :text "󰒮")))
+
+                 (eventbox :cursor "pointer"
+                           (button :onclick "playerctl --player=spotify play-pause"
+                                   :style "background: none; box-shadow: none;"
+                                   (label :text {music_data.status == "Playing" ? "󰏤" : "󰐊"})))
+
+                 (eventbox :cursor "pointer"
+                           (button :onclick "playerctl --player=spotify next"
+                                   :style "background: none; box-shadow: none;"
+                                   (label :text "󰒭")))
+                 )
+            )
+       )
+  )

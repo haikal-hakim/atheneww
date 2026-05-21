@@ -1,0 +1,34 @@
+@import "variables.scss";
+
+.sysinfo-card {
+  background: $bg-night;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.sysinfo-icon {
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.sysinfo-cpu {
+  background: rgba(137, 180, 250, 0.15);
+  color: $blue-primary;
+}
+
+.sysinfo-ram {
+  background: rgba(203, 166, 247, 0.15);
+  color: $purple-primary;
+}
+
+.sysinfo-disk {
+  background: rgba(148, 226, 213, 0.15);
+  color: $green-soft;
+  font-size: 35px;
+}
+
+.sysinfo-battery {
+  background: rgba(166, 227, 161, 0.15);
+  color: $green-primary;
+  font-size: 35px;
+}

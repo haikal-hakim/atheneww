@@ -1,0 +1,128 @@
+(defpoll sysinfo :interval "1s"
+  "bash ~/.config/eww/scripts/sysinfo.sh")
+
+(defwidget widget_sysinfo []
+  (box 
+    :orientation "vertical"
+    :space-evenly false
+    :spacing 8
+
+    (box :orientation "horizontal"
+         :space-evenly true
+         :spacing 0
+
+         ; CPU
+         (box :orientation "vertical"
+              :halign "center"
+              :spacing 4
+
+              (box :class "sysinfo-card"
+                   :orientation "vertical"
+                   :halign "center"
+                   :spacing 4
+
+                   (circular-progress
+                     :value {sysinfo.cpu}
+                     :class "sysinfo-cpu"
+                     :thickness 9
+                     :width 90
+                     :height 90
+
+                     (label
+                       :class "sysinfo-icon"
+                       :text "󰻠"
+                       :halign "center"
+                       :valign "center"
+                       )
+                     )
+                   )
+              )
+
+         ; RAM
+         (box :orientation "vertical"
+              :halign "center"
+              :spacing 4
+
+              (box :class "sysinfo-card"
+                   :orientation "vertical"
+                   :halign "center"
+                   :spacing 4
+
+                   (circular-progress
+                     :value {sysinfo.ram_percent}
+                     :class "sysinfo-ram"
+                     :thickness 9
+                     :width 90
+                     :height 90
+
+                     (label
+                       :class "sysinfo-icon"
+                       :text "󰍛"
+                       :halign "center"
+                       :valign "center"
+                       )
+                     )
+                   )
+              )
+         )
+
+    (box :orientation "horizontal"
+         :space-evenly true
+         :spacing 0
+
+         ; Disk
+         (box :orientation "vertical"
+              :halign "center"
+              :spacing 4
+
+              (box :class "sysinfo-card"
+                   :orientation "vertical"
+                   :halign "center"
+                   :spacing 4
+
+                   (circular-progress
+                     :value {sysinfo.disk_percent}
+                     :class "sysinfo-disk"
+                     :thickness 9
+                     :width 90
+                     :height 90
+
+                     (label
+                       :class "sysinfo-icon-disk"
+                       :text "󰋊"
+                       :halign "center"
+                       :valign "center"
+                       )
+                     )
+                   )
+              )
+
+         ; Battery
+         (box :orientation "vertical"
+              :halign "center"
+              :spacing 4
+
+              (box :class "sysinfo-card"
+                   :orientation "vertical"
+                   :halign "center"
+                   :spacing 4
+
+                   (circular-progress
+                     :value {sysinfo.battery}
+                     :class "sysinfo-battery"
+                     :thickness 9
+                     :width 90
+                     :height 90
+
+                     (label
+                       :class "sysinfo-icon-battery"
+                       :text {sysinfo.battery_status == "Charging" ? "󰂄" : "󱈑"}
+                       :halign "center"
+                       :valign "center"
+                       )
+                     )
+                   )
+              )
+         )
+)
+)

@@ -1,0 +1,61 @@
+(defwidget widget_website []
+  (box :orientation "horizontal"
+       :spacing 8
+       :space-evenly true
+       
+       ;; --- GITHUB ---
+       (box :class "web-github"
+            (eventbox :cursor "pointer"
+                      (button :class "web-btn"
+                              :style "background: none; box-shadow: none;"
+                              :onclick "bash ~/.config/eww/scripts/toggle_dashboard.sh close && bash ~/.config/eww/scripts/web_open.sh --gh"
+                              (label :class "web-icon github-icon"
+                                     :halign "center"
+                                     :valign "center"
+                                     :text ""))))
+
+       ;; --- INSTAGRAM ---
+       (box :class "web-instagram"
+            (eventbox :cursor "pointer"
+                      (button :class "web-btn"
+                              :style "background: none; box-shadow: none;"
+                              :onclick "bash ~/.config/eww/scripts/toggle_dashboard.sh close && bash ~/.config/eww/scripts/web_open.sh --ig"
+                              (label :class "web-icon instagram-icon"
+                                     :halign "center"
+                                     :valign "center"
+                                     :text ""))))
+
+       ;; --- WHATSAPP ---
+       (box :class "web-whatsapp"
+            (eventbox :cursor "pointer"
+                      (button :class "web-btn"
+                              :style "background: none; box-shadow: none;"
+                              :onclick "bash ~/.config/eww/scripts/toggle_dashboard.sh close && bash ~/.config/eww/scripts/web_open.sh --wa"
+                              (label :class "web-icon whatsapp-icon"
+                                     :halign "center"
+                                     :valign "center"
+                                     :text ""))))
+
+       ;; --- GMAIL ---
+       (box :class "web-gmail"
+            (eventbox :cursor "pointer"
+                      (button :class "web-btn"
+                              :style "background: none; box-shadow: none;"
+                              :onclick "bash ~/.config/eww/scripts/toggle_dashboard.sh close && bash ~/.config/eww/scripts/web_open.sh --mail"
+                              (label :class "web-icon gmail-icon"
+                                     :halign "center"
+                                     :valign "center"
+                                     :text "󰊫"))))
+
+       ;; --- INCOGNITO ---
+       (box :class "web-incognito"
+            (eventbox :cursor "pointer"
+                      (button :class "web-btn"
+                              :style "background: none; box-shadow: none;"
+                              :onclick "bash ~/.config/eww/scripts/toggle_dashboard.sh close && bash ~/.config/eww/scripts/web_open.sh --inc"
+                              (label :class "web-icon incognito-icon"
+                                     :halign "center"
+                                     :valign "center"
+                                     :text "󰗹"))))
+  )
+)

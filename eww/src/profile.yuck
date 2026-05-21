@@ -1,0 +1,27 @@
+(defwidget widget_profile []
+  (box :class "profile-card"
+       :orientation "vertical"
+       :space-evenly false
+       :spacing 15
+
+       ;; --- IMAGE ---
+       (box :class "profile-avatar"
+            :style "background-image: url('${EWW_CONFIG_DIR}/assets/avatar.png'); border-radius: 99px;"
+            :width 120
+            :height 120)
+
+       ;; --- DETAIL ---
+       (box :class "profile-info"
+            :orientation "vertical"
+            :space-evenly false
+            :spacing 6
+
+            (label :class "profile-name"
+                   :text "Root"
+                   :halign "center")
+
+            (label :class "profile-tag"
+                   :text "@athena"
+                   :halign "center"))
+       )
+  )
