@@ -14,7 +14,7 @@
 ---
 
 ## About This Project
-This repository is my personal ecosystem for **Eww (Elkowar's Wacky Widgets)**, specifically crafted for my **Athena** setup.
+This repository is ecosystem for **Eww (Elkowar's Wacky Widgets)**.
 
 ---
 
@@ -72,7 +72,7 @@ Task three
 The weather widget fetches data from wttr.in. To change the location:
 
 ```text
-Open eww/scripts/weather.sh.
+Open eww/scripts/weather.sh
 ```
 
 Edit the curl URL:
