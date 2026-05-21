@@ -83,6 +83,18 @@ DATA=$(curl -s "wttr.in/YOUR_CITY?format=j1")
 
 ---
 
+## Customizing Folder Shortcuts
+
+To change the folder paths for `widget_folders`, edit `eww/src/folders.yuck`. Look for the section and update the `onclick` commands:
+
+**Example:**
+
+  ```lisp
+  :onclick "bash ~/.config/eww/scripts/toggle_dashboard.sh close && thunar ~/Downloads &"
+  ```
+
+---
+
 ## Keybindings
 
 The dashboard can be toggled using the provided script in the scripts/ directory. Map the following command to your window manager's configuration:
