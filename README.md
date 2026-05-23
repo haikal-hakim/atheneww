@@ -22,9 +22,7 @@
 
 ## About Repository
 
-This repository is structured to maintain a clean separation between **logic** (scripts), **structure** (Yuck markup), and **style** (SCSS), ensuring that the dashboard remains modular, maintainable, and easily extendable for future iterations.
-
-I will add some other components in the near future
+This repo is actually just for fun, coding, creating layouts, and other things. Maybe I'll add something new, like a bar, in the future.
 
 ---
 
@@ -42,7 +40,7 @@ athena-eww/
     ├── assets/          # Icons, images, and visual assets
     ├── scripts/         # Bash & Python scripts for data
     ├── src/             # .yuck files
-    ├── tokens/          # .scss styles
+    ├── styles/          # .scss styles
     ├── eww.scss         # Main stylesheet entry
     └── eww.yuck         # Main configuration entry
 ```
