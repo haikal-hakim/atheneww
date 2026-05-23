@@ -1,17 +1,17 @@
-@import "tokens/variables.scss";
+@import "styles/tokens.scss";
 
-@import "tokens/profile.scss";
-@import "tokens/weather.scss";
-@import "tokens/calendar.scss";
+@import "styles/profile.scss";
+@import "styles/weather.scss";
+@import "styles/calendar.scss";
 
-@import "tokens/launcher.scss";
-@import "tokens/sysinfo.scss";
-@import "tokens/folders.scss";
+@import "styles/launcher.scss";
+@import "styles/sysinfo.scss";
+@import "styles/folders.scss";
 
-@import "tokens/website.scss";
-@import "tokens/uptime.scss";
-@import "tokens/todo.scss";
-@import "tokens/music.scss";
+@import "styles/website.scss";
+@import "styles/uptime.scss";
+@import "styles/todo.scss";
+@import "styles/music.scss";
 
 * {
   font-family: "JetBrainsMono Nerd Font";

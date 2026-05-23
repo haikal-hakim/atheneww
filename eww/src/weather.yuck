@@ -1,6 +1,7 @@
 (defpoll weather_time :interval "60s" "date '+%H.%M'")
 
 (defpoll weather :interval "60m"
+  :initial '{"location": "Loading...", "temp": "0", "desc": "Unknown", "type": "day"}'
   "bash ~/.config/eww/scripts/weather.sh")
 
 (defwidget widget_weather []
@@ -107,11 +108,11 @@
                  (label :class "weather-time"
                         :text " ${weather_time}"))
             )
+                ;; location & Desc
+                (label :class "weather-location"
+                       :text "${weather.location}")
+                (label :class "weather-desc"
+                       :text "${weather.desc}")
+        )
+)
 
-;; location & Desc
-(label :class "weather-location"
-       :text "${weather.location}")
-(label :class "weather-desc"
-       :text "${weather.desc}")
-)
-)

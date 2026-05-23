@@ -1,4 +1,5 @@
 (defpoll sysinfo :interval "1s"
+  :initial "{\"cpu\": 0, \"ram_used\": 0, \"ram_total\": 0, \"ram_percent\": 0, \"disk_used\": \"0G\", \"disk_total\": \"0G\", \"disk_percent\": 0, \"battery\": 0, \"battery_status\": \"Unknown\"}"
   "bash ~/.config/eww/scripts/sysinfo.sh")
 
 (defwidget widget_sysinfo []
@@ -126,3 +127,4 @@
          )
 )
 )
+

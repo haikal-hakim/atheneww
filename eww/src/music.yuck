@@ -1,5 +1,7 @@
-(deflisten music_data
-  "playerctl --player=spotify --follow metadata --format '{\"status\":\"{{status}}\",\"title\":\"{{title}}\",\"artist\":\"{{artist}}\"}'")
+(deflisten music_status "playerctl --player=spotify --follow status")
+(deflisten music_title "playerctl --player=spotify --follow metadata title")
+(deflisten music_artist "playerctl --player=spotify --follow metadata artist")
+
 
 (defwidget widget_music []
   (box :class "music-card"
@@ -24,7 +26,7 @@
                    :halign "center")
 
             (label :class "music-artist"
-                   :text {music_data.artist}
+                   :text {music_artist == "" ? "No Artist" : music_artist}
                    :limit-width 20
                    :halign "center")
 

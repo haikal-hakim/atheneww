@@ -1,4 +1,6 @@
-(deflisten cal_data "bash ~/.config/eww/scripts/cal_watch.sh")
+(deflisten cal_data
+  :initial '{"month_year": "", "weeks": [], "year": 0, "month": 0}'
+  "bash ~/.config/eww/scripts/cal_watch.sh")
 (defvar selected_day 0)
 
 (defwidget widget_calendar []
@@ -69,3 +71,4 @@
             )
        )
   )
+
