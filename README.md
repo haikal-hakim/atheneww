@@ -196,6 +196,18 @@ Task three
 
 ---
 
+<h1 align="center">Autostart & Keybindings</h1>
+
+## Launch Bar
+
+You need to launch the Eww daemon and open the bar window inside your Window Manager configuration.
+
+```text
+exec-once = eww daemon && eww open window_bar
+```
+
+---
+
 ## Keybindings
 
 To toggle the dashboard, map the execution script to your Window Manager configuration.
