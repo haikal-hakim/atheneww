@@ -98,9 +98,13 @@ chmod +x ~/.config/eww/scripts/dashboard/*.sh
 
 ## Customizing profile
 
-Replace the photo, name and tag in `widget_profile` with the photo you want in `eww/src/dashboard/profile.yuck`
+Put the photo into the `eww/assets` folder and change the photo, name and tags, open:
 
-**Example:**
+```
+eww/src/dashboard/profile.yuck
+```
+
+Edit the code:
 
 ```lisp
 :style "background-image: url('${EWW_CONFIG_DIR}/assets/NAME_FILE.png'); border-radius: 99px;"
