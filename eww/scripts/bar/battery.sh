@@ -7,7 +7,6 @@ STATUS=$(cat "$BAT/status")
 LOW_LOCK="/tmp/battery_low_notified"
 CRIT_LOCK="/tmp/battery_crit_notified"
 
-# --- 1. LOGIKA PILIH ICON (Murni Cuma Nyari Icon doang) ---
 if [ "$STATUS" = "Charging" ]; then
   ICON="󱐌"
 else
