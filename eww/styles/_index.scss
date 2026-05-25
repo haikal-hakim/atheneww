@@ -1,13 +1,10 @@
-// Import tokens (variabel/warna)
 @import "tokens";
 
 //--- Import bar --- //
 @import "bar/bar";
 @import "bar/battery";
 @import "bar/network";
-@import "bar/bluetooth";
 @import "bar/clock.scss";
-@import "bar/brightness.scss";
 @import "bar/volume.scss";
 @import "bar/workspaces.scss";
 
