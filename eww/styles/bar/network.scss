@@ -1,0 +1,22 @@
+@import "../tokens.scss";
+
+.bar-network {
+  font-size: $icon;
+  margin-right: 6px;
+
+  &.wired {
+    color: $blue-primary;
+  }
+
+  &.wifi-ok {
+    color: $text-primary;
+  }
+
+  &.wifi-low {
+    color: $yellow-primary;
+  }
+
+  &.disconnected {
+    color: $text-dim;
+  }
+}

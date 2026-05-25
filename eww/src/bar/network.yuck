@@ -1,0 +1,9 @@
+(defpoll bar_net_icon   :interval "10s" :initial "󰤭" "bash ~/.config/eww/scripts/bar/network.sh icon")
+(defpoll bar_net_status :interval "10s" :initial "disconnected" "bash ~/.config/eww/scripts/bar/network.sh status")
+
+(defwidget widget_network []
+  (label :class "bar-network ${bar_net_status}"
+         :halign "center"
+         :valign "center"
+         :text {bar_net_icon})
+)

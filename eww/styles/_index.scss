@@ -1,0 +1,24 @@
+// Import tokens (variabel/warna)
+@import "tokens";
+
+//--- Import bar --- //
+@import "bar/bar";
+@import "bar/battery";
+@import "bar/network";
+@import "bar/bluetooth";
+@import "bar/clock.scss";
+@import "bar/brightness.scss";
+@import "bar/volume.scss";
+@import "bar/workspaces.scss";
+
+// --- Import dashboard --- //
+@import "dashboard/profile";
+@import "dashboard/weather";
+@import "dashboard/calendar";
+@import "dashboard/launcher";
+@import "dashboard/sysinfo";
+@import "dashboard/folders";
+@import "dashboard/website";
+@import "dashboard/uptime";
+@import "dashboard/todo";
+@import "dashboard/music";

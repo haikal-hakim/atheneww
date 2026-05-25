@@ -1,0 +1,19 @@
+@import "../tokens.scss";
+
+
+
+.battery-container {
+  background-color: #313244;
+  padding: 0 4px;
+  border-radius: 6px;
+
+  .bar-battery-icon {
+    font-size: $icon;
+  }
+
+  .bar-battery-percent {
+    font-size: 14px;
+    color: $text-muted;
+    margin-right: 6px;
+  }
+}

@@ -1,0 +1,37 @@
+(include "./src/bar/workspaces.yuck")
+(include "./src/bar/clock.yuck")
+(include "./src/bar/battery.yuck")
+(include "./src/bar/network.yuck")
+(include "./src/bar/volume.yuck")
+
+(defwidget widget_bar []
+  (centerbox :class "bar"
+             :orientation "horizontal"
+             :valign "fill"
+             :vexpand true
+
+             ;; LEFT
+             (box :orientation "h"
+                  :halign "start"
+                  (widget_workspaces))
+
+             ;; CENTER
+             (box :halign "center"
+                  (widget_clock))
+
+             ;;RIGHT
+             (box :orientation "h"
+                  :halign "end"
+                  :spacing 10
+                  :space-evenly false
+
+                  (box
+                    :orientation "h"
+                    :spacing 12
+                    (widget_network)
+                    (widget_volume))
+
+                  (box
+                    (widget_battery)))
+             )
+  )
