@@ -17,7 +17,7 @@
     }
   },
   "modules": [
-    "berak",
+    "break",
     {
       "type": "title",
       "key": "󱇐",
