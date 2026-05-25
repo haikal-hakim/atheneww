@@ -6,7 +6,7 @@ generate_workspaces() {
   URGENT=$(hyprctl workspaces -j | jq -r '.[] | select(.has_urgent == true or .urgent == true) | .id' | tr '\n' ' ')
 
   echo -n "(box :class \"workspaces\" :orientation \"h\" :space-evenly false :spacing 12"
-  for i in {1..4}; do
+  for i in {1..5}; do
     CLASS="ws-dot"
     ICON="󰊠"
 
