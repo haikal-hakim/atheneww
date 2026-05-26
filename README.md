@@ -25,8 +25,11 @@ This project is still under development, therefore please forgive if this struct
 
 ---
 
+## Preview
 
-## Resolution & Positioning
+<img width="2880" height="1800" alt="20260525_231808" src="https://github.com/user-attachments/assets/e00b8376-b724-40e5-94ff-0cdd6491fa41" />
+
+### Resolution & Positioning
 
 This config is optimized for **2880x1800 (HiDPI)** screens. Since this setup uses absolute coordinates.
 
@@ -35,14 +38,9 @@ This config is optimized for **2880x1800 (HiDPI)** screens. Since this setup use
 
 ---
 
-## Preview
-
-<img width="2880" height="1800" alt="20260525_231808" src="https://github.com/user-attachments/assets/e00b8376-b724-40e5-94ff-0cdd6491fa41" />
-
----
-
 ## Rofi Preview
-This Rofi display,
+
+This Rofi display
 
 | Rofi Launcher | Clipboard Manager |
 | :---: | :---: |
