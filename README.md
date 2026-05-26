@@ -27,11 +27,6 @@ This project is still under development, therefore please forgive if this struct
 
 ---
 
-## Preview
-
-<img width="2880" height="1800" alt="20260525_231808" src="https://github.com/user-attachments/assets/e00b8376-b724-40e5-94ff-0cdd6491fa41" />
-
----
 
 ## Resolution & Positioning
 
@@ -39,6 +34,21 @@ This config is optimized for **2880x1800 (HiDPI)** screens. Since this setup use
 
 > [!TIP]
 > You will need to adjust the geometry values in `X` and `Y` in `eww/src/dashboard/dashboard.yuck`.
+
+---
+
+## Preview
+
+<img width="2880" height="1800" alt="20260525_231808" src="https://github.com/user-attachments/assets/e00b8376-b724-40e5-94ff-0cdd6491fa41" />
+
+---
+
+## Rofi Preview
+This Rofi display,
+
+| Rofi Launcher | Clipboard Manager |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/d6121184-0162-449d-999c-93b9dc92d6d9" /> | <img src="https://github.com/user-attachments/assets/3001d6bc-5deb-44f6-903c-a1c117afb043" /> |
 
 ---
 
